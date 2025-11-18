@@ -7,6 +7,9 @@ body {
     margin: 0;
     padding: 0;
     background-color: #f4f7f4;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;   /* PARA O RODAPÉ IR PARA O FUNDO */
 }
 
 /* ============================
@@ -18,11 +21,6 @@ header {
     color: white;
     text-align: center;
     padding: 25px 15px;
-}
-
-header h1 {
-    margin-bottom: 8px;
-    font-size: 2rem;
 }
 
 /* ============================
@@ -72,7 +70,7 @@ header h1 {
 }
 
 /* ============================
-            BOTÃO SUBIR
+        BOTÃO VOLTAR AO TOPO
 ============================ */
 
 .scroll-to-top {
@@ -86,4 +84,22 @@ header h1 {
     width: 45px;
     height: 45px;
     display: none;
-    justify-c
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    font-size: 22px;
+    box-shadow: 0 2px 5px rgba(0,0,0,.3);
+}
+
+/* ============================
+            RODAPÉ
+============================ */
+
+footer {
+    background-color: #234d25;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+    margin-top: auto;     /* GARANTE QUE FIQUE NO FUNDO */
+    width: 100%;
+}
